@@ -47,9 +47,6 @@ $(NAME): $(OBJ) $(INCLUDES)
 $(BIN)/%.o: ./*/%.c $(INCLUDES) | $(BIN)
 	@gcc -Wall -Wextra -Werror -c $< -o $@
 
-bonus:
-	@$(MAKE) all
-
 clean:
 	rm -rf $(OBJ)
 	@echo "Object files deleted"
